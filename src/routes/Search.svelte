@@ -21,7 +21,7 @@
 
 	$: {
 		if (!typing) {
-			if (query !== '') {
+			if (query) {
 				// Send API Call
 				searchTicker(query).then((res: Ticker[]) => {
 					console.log(res);
